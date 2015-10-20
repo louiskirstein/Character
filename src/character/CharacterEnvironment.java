@@ -16,7 +16,10 @@ import java.awt.event.MouseEvent;
  */
 class CharacterEnvironment extends Environment {
 
+    private Turtwig bobby;
+
     public CharacterEnvironment() {
+        bobby = new Turtwig(100, 100);
     }
 
     @Override
@@ -41,6 +44,10 @@ class CharacterEnvironment extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
+        if (bobby != null) {
+            bobby.draw(graphics);
+
+        }
     }
-    
+
 }
