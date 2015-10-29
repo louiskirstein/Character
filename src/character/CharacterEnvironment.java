@@ -6,6 +6,7 @@
 package character;
 
 import environment.Environment;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -16,10 +17,13 @@ import java.awt.event.MouseEvent;
  */
 class CharacterEnvironment extends Environment {
 
-    private Turtwig bobby;
+    private Cain bobbyLarge, bobbySmall;
 
     public CharacterEnvironment() {
-        bobby = new Turtwig(100, 100);
+        bobbyLarge = new Cain(300, 80, 250, 350);
+        //bobbySmall = new Cain(400, 50, 150, 210 );
+        this.setBackground(new Color(200,0,0));
+
     }
 
     @Override
@@ -44,9 +48,12 @@ class CharacterEnvironment extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
-        if (bobby != null) {
-            bobby.draw(graphics);
+        if (bobbyLarge != null) {
+            bobbyLarge.draw(graphics);
 
+        //
+        //if (bobbySmall != null) {
+        //    bobbySmall.draw(graphics);
         }
     }
 

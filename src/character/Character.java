@@ -17,7 +17,7 @@ public class Character {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       ApplicationStarter.run("Pokemon", new CharacterEnvironment());
+       ApplicationStarter.run("Binding of Isaac", new CharacterEnvironment());
        
     }
     
