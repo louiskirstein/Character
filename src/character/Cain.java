@@ -188,20 +188,20 @@ public class Cain {
         graphics.fillRect(x + (width * 24 / 100), y + (height * 94 / 100), width * 37 / 200, height * 2 / 100);
         
         //top, bottom bar
-        graphics.setColor(Color.BLACK);
+        graphics.setColor(Color.WHITE);
         graphics.fillRect(0, 0, 1000, 70);
         graphics.fillRect(0, 508, 1000, 70);
         
         //top bar writing
-        graphics.setColor(Color.RED);
+        graphics.setColor(Color.BLACK);
         graphics.setFont(new Font("Calibri", Font.BOLD, 20));
         graphics.drawString("-LIFE-", 750, 26);
         
         //Text
-        graphics.setColor(Color.WHITE);
+        graphics.setColor(Color.BLACK);
         graphics.setFont(new Font("Calibri", Font.BOLD, 50));
         graphics.drawString("Cain", 370, 560);
-        graphics.setColor(Color.WHITE);
+        graphics.setColor(Color.BLACK);
         graphics.setFont(new Font("Calibri", Font.BOLD, 45));
         graphics.drawString("Binding of Isaac", 240, 48);
            
